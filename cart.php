@@ -6,7 +6,7 @@ require_once("connection/connection.php");
 $Phonenumber = $_SESSION["Phonenumber"];
 // echo $phone_session;
 
-$row_SQL_SELECT_ALL_CART = "SELECT * FROM cart WHERE Phonenumber = '$Phonenumber'";
+$row_SQL_SELECT_ALL_CART = "SELECT * FROM cart";
 $result_ALL_CART = mysqli_query($conn, $row_SQL_SELECT_ALL_CART);
 
 ?>
